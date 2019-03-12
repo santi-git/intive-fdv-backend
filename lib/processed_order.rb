@@ -1,12 +1,29 @@
+require_relative 'no_items_in_order_error'
+
 class ProcessedOrder
-  def initialize(order, discount = nil)
-    @order = order
-    @discount = discount
+  attr_accessor :price, :items
+
+  def initialize(order, discounts = nil)
+    raise NoItemsInOrderError if order.empty?
+
+    @order     = order
+    @discounts = discounts
+
+    @items = total_items
+    @price = total_price
   end
 
-  def price
-    raise Exception if @order.empty?
+  def discount
+    @discounts.sum { |d| d.calculate @items, @price }
+  end
 
-    @order.inject(0) { |r1, r2| r1 + r2.price }
+  private
+
+  def total_price
+    @order.sum(&:price)
+  end
+
+  def total_items
+    @order.sum(&:amount)
   end
 end
