@@ -56,7 +56,7 @@ structure), and also could have further improvements. The point in
 which it is know is a level that can showcase most of the best 
 practices without being it over-design.
 
-####Structure
+#### Structure
 The code itself is self-explanatory, but the main classes to look at
 are OrderProcessor, Discount and Rental. Between the tests and the documentation
 there is plenty of information to understand interface, implementation
