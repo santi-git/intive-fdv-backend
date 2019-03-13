@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative 'daily_rental'
+require_relative '../lib/daily_rental'
 
 describe DailyRental do
   it '#price returns the amount multiplied by the rate' do

@@ -1,6 +1,6 @@
 require_relative 'no_items_in_order_error'
 
-class ProcessedOrder
+class OrderProcessor
   attr_accessor :price, :items
 
   def initialize(order, discounts = nil)

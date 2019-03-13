@@ -7,11 +7,11 @@ class Rental
     @amount = amount
   end
 
-  def rate
+  def self.rate
     raise UndefinedRateError
   end
 
   def price
-    @amount * rate
+    @amount * self.class.rate
   end
 end

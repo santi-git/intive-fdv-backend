@@ -1,7 +1,7 @@
 require_relative 'rental'
 
 class HourlyRental < Rental
-  def rate
+  def self.rate
     5
   end
 end

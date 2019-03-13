@@ -1,7 +1,7 @@
 require_relative 'rental'
 
 class WeeklyRental < Rental
-  def rate
+  def self.rate
     60
   end
 end
