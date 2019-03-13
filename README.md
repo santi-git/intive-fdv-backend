@@ -62,11 +62,23 @@ are OrderProcessor, Discount and Rental. Between the tests and the documentation
 there is plenty of information to understand interface, implementation
 and decisions.
 
+#### About state and classes
+Maybe with a simpler way to define interfaces the Discount
+and Rental subclasses could be replaced, thus replacing inheritance
+by composition.
+Also, reducing application state storage would improve maintainability,
+this could be some of the next steps in refactoring.
+
 ### Development Practices
 
 - Test Driven Development (using RSpec and SimpleCov)
-- Single Responsibility Principle
+- SOLID principles
 - Inline Documentation (using TomDoc style)
 - Custom Errors to improve experience
+- RuboCop for Syntax Checking following community guidelines
 
 ### Tests
+```bash
+$ bundle install
+$ rspec
+```

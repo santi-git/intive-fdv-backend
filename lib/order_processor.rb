@@ -22,7 +22,7 @@ class OrderProcessor
   def initialize(order, discounts = nil)
     raise NoItemsInOrderError if order.empty?
 
-    @order     = order
+    @order = order
     @discounts = discounts
 
     @items = total_items
