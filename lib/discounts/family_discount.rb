@@ -1,4 +1,6 @@
-class FamilyDiscount
+require_relative 'discount'
+
+class FamilyDiscount < Discount
   def self.discount
     0.3
   end

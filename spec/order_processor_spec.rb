@@ -1,10 +1,10 @@
 require 'rspec'
 require_relative '../lib/order_processor'
-require_relative '../lib/hourly_rental'
-require_relative '../lib/daily_rental'
-require_relative '../lib/weekly_rental'
-require_relative '../lib/family_discount'
-require_relative '../lib/no_items_in_order_error'
+require_relative '../lib/rentals/hourly_rental'
+require_relative '../lib/rentals/daily_rental'
+require_relative '../lib/rentals/weekly_rental'
+require_relative '../lib/discounts/family_discount'
+require_relative '../lib/errors/no_items_in_order_error'
 
 
 describe OrderProcessor do

@@ -1,5 +1,6 @@
-require_relative 'undefined_rate_error'
+require_relative '../errors/undefined_rate_error'
 
+# Public: Encapsulates basic Rental logic
 class Rental
   attr_accessor :amount
 

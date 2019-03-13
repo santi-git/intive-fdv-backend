@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/family_discount'
+require_relative '../../lib/discounts/family_discount'
 
 describe FamilyDiscount do
   describe '.calculate' do

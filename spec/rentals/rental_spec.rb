@@ -1,6 +1,6 @@
 require 'rspec'
-require_relative '../lib/rental'
-require_relative '../lib/undefined_rate_error'
+require_relative '../../lib/rentals/rental'
+require_relative '../../lib/errors/undefined_rate_error'
 
 describe Rental do
   it 'throws an error if when rate is not overridden' do
